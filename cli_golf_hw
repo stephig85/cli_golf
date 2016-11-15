@@ -1,0 +1,258 @@
+Last login: Mon Nov 14 19:09:42 on ttys000
+ GA General Assembly  Web Development Immersive 
+------------------------------------------
+git version 2.10.1
+Homebrew 1.1.0 Homebrew/homebrew-core (git revision bb24; last commit 2016-11-15)
+ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-darwin16]
+node v7.1.0
+psql (PostgreSQL) 9.5.5
+------------------------------------------
+type unwelcome to remove this message
+stephaniegage ~
+$ cd code/wdi/homework/cli_golf-master/
+stephaniegage ~/code/wdi/homework/cli_golf-master
+$ tree
+.
+├── LICENSE.txt
+├── README.md
+├── kitchen
+│   ├── cans.txt
+│   ├── fridge
+│   │   ├── diapers.txt
+│   │   ├── freezer
+│   │   │   ├── couch.txt
+│   │   │   ├── frozenpeas.txt
+│   │   │   └── icecream.txt
+│   │   ├── milk.txt
+│   │   └── trashcan
+│   │       ├── banana-peels.txt
+│   │       ├── chicken-bones.txt
+│   │       ├── egg-shells.txt
+│   │       └── sink
+│   │           ├── clean-dishes.txt
+│   │           ├── delete-me.txt
+│   │           └── dirty-dishes.txt
+│   └── pantry
+│       ├── cans.txt
+│       ├── cereal.txt
+│       └── crisper-drawer
+│           └── lettuce.txt
+└── kitchen.zip
+
+7 directories, 18 files
+stephaniegage ~/code/wdi/homework/cli_golf-master
+$ cd kitchen/fridge/
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge
+$ mv trashcan/ ../kitchen
+'trashcan/' -> '../kitchen'
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge
+$ cd ../
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen
+$ ls
+cans.txt  fridge/  kitchen/  pantry/
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen
+$ cd fridge
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge
+$ ls
+diapers.txt  freezer/  milk.txt
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge
+$ cd ../
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen
+$ mv kitchen/ trashcan/
+'kitchen/' -> 'trashcan/'
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen
+$ ls
+cans.txt  fridge/  pantry/  trashcan/
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen
+$ cd trashcan
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/trashcan
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt  sink/
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/trashcan
+$ mv sink/ ../kitchen/sink
+gmv: cannot move 'sink/' to '../kitchen/sink': No such file or directory
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/trashcan
+$ mv sink/ ../../sink
+'sink/' -> '../../sink'
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/trashcan
+$ cd ../
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen
+$ ls
+cans.txt  fridge/  pantry/  trashcan/
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen
+$ cd trashcan/
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/trashcan
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/trashcan
+$ cd ../../
+stephaniegage ~/code/wdi/homework/cli_golf-master
+$ ls
+LICENSE.txt*  README.md*  kitchen/  kitchen.zip*  sink/
+stephaniegage ~/code/wdi/homework/cli_golf-master
+$ mv sink/ kitchen/sink/
+'sink/' -> 'kitchen/sink/'
+stephaniegage ~/code/wdi/homework/cli_golf-master
+$ cd kitchen/
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen
+$ ls
+cans.txt  fridge/  pantry/  sink/  trashcan/
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen
+$ ls
+cans.txt  fridge/  pantry/  sink/  trashcan/
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen
+$ cd fridge
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge
+$ ls
+diapers.txt  freezer/  milk.txt
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge
+$ rm diapers.txt 
+removed 'diapers.txt'
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge
+$ ls
+freezer/  milk.txt
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge
+$ cd ../
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen
+$ mv cans.txt pantry/cans.txt
+'cans.txt' -> 'pantry/cans.txt'
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen
+$ cd pantry/
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/pantry
+$ ls
+cans.txt  cereal.txt  crisper-drawer/
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/pantry
+$ mv crisper-drawer/ ../fridge/
+'crisper-drawer/' -> '../fridge/crisper-drawer'
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/pantry
+$ cd ../fridge/
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge
+$ ls
+crisper-drawer/  freezer/  milk.txt
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge
+$ cd crisper-drawer/
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge/crisper-drawer
+$ ls
+lettuce.txt
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge/crisper-drawer
+$ touch apples.txt
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge/crisper-drawer
+$ ls
+apples.txt  lettuce.txt
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge/crisper-drawer
+$ cd ../
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge
+$ ls
+crisper-drawer/  freezer/  milk.txt
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge
+$ cd freezer/
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge/freezer
+$ ls
+couch.txt  frozenpeas.txt  icecream.txt
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge/freezer
+$ rm couch.txt 
+removed 'couch.txt'
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge/freezer
+$ ls
+frozenpeas.txt	icecream.txt
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge/freezer
+$ cd ../
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/fridge
+$ cd ../
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen
+$ cd pantry/
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/pantry
+$ ls
+cans.txt  cereal.txt
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/pantry
+$ cd ../
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen
+$ cd sink/
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/sink
+$ ls
+clean-dishes.txt  delete-me.txt  dirty-dishes.txt
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/sink
+$ rm delete-me.txt 
+removed 'delete-me.txt'
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/sink
+$ mkdir drying-rack/
+gmkdir: created directory 'drying-rack/'
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/sink
+$ mv clean-dishes.txt drying-rack/clean-dishes.txt
+'clean-dishes.txt' -> 'drying-rack/clean-dishes.txt'
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/sink
+$ ls
+dirty-dishes.txt  drying-rack/
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/sink
+$ cd drying-rack/
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/sink/drying-rack
+$ ls
+clean-dishes.txt
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/sink/drying-rack
+$ cd ../../
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen
+$ cd trashcan/
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/trashcan
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen/trashcan
+$ cd ../
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+stephaniegage ~/code/wdi/homework/cli_golf-master/kitchen
+$ cd ../
+stephaniegage ~/code/wdi/homework/cli_golf-master
+$ tree
+.
+├── LICENSE.txt
+├── README.md
+├── kitchen
+│   ├── fridge
+│   │   ├── crisper-drawer
+│   │   │   ├── apples.txt
+│   │   │   └── lettuce.txt
+│   │   ├── freezer
+│   │   │   ├── frozenpeas.txt
+│   │   │   └── icecream.txt
+│   │   └── milk.txt
+│   ├── pantry
+│   │   ├── cans.txt
+│   │   └── cereal.txt
+│   ├── sink
+│   │   ├── dirty-dishes.txt
+│   │   └── drying-rack
+│   │       └── clean-dishes.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       └── egg-shells.txt
+└── kitchen.zip
+
+8 directories, 15 files
+stephaniegage ~/code/wdi/homework/cli_golf-master
+$ 
